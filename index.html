@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <meta property="og:description" content="Alpha Ed/tech - Módulo 07 - JavaScript - Parte 16" />
+    <meta property="og:url" content="https://rogeriokotsubo.github.io/js-mod-16/" />
+    <meta property="og:determiner" content="a" />
+    <meta property="og:locale" content="pt_BR" /> 
+    <title>JS - Modulo 07 - Parte 16</title>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <header>
+      <nav id="menu">
+          <a class="a-menu" href="./index.html">Exercício 1</a>
+      </nav>
+    </header>
+
+    <!-- CORPO DA PÁGINA -->
+    <main id="exercise1">
+      <section class="exercise">
+        <h1>Consulta de CEP</h1>
+        <div class="input-container">
+          <form id="frm-cep"> 
+            <div class="ctn-input-center">
+              <label class="lbl-form" for="cep">CEP:</label>
+              <input placeholder="CEP" type="text" id="cep" name="cep">
+            </div>        
+            <div id="ctn-cep">
+              <button id="btn-cep" type="button">Buscar Endereço</button>
+              <p id="msg">&nbsp;</p>
+            </div>     
+          </form>
+          <form id="frm-inputs">         
+            <div id="ctn-address-info">
+              <div id="ctn-address"> 
+                <div class="ctn-input-left">
+                  <label class="lbl-form-left" for="address">Endereço:</label>
+                  <input type="text" id="address" name="address">
+                </div>  
+                <div class="ctn-input">
+                  <label class="lbl-form-left" for="num">Número:</label>
+                  <input type="text" id="num" name="num">
+                </div>  
+              </div>  
+              <div id="ctn-district"> 
+                <div class="ctn-input-left">
+                  <label class="lbl-form-left" for="complement">Complemento:</label>
+                  <input type="text" id="complement" name="complement">
+                </div>  
+                <div class="ctn-input">
+                  <label class="lbl-form-left" for="district">Bairro:</label>
+                  <input type="text" id="district" name="district">
+                </div>  
+              </div>  
+              <div id="ctn-city"> 
+                <div class="ctn-input-left">
+                  <label class="lbl-form-left" for="city">Cidade:</label>
+                  <input type="text" id="city" name="city">
+                </div>  
+                <div class="ctn-input">
+                  <label class="lbl-form-left" for="state">UF:</label>
+                  <input type="text" id="state" name="state">
+                </div>  
+              </div>  
+              <div id="ctn-coordinates"> 
+                <div class="ctn-input-left">
+                  <label class="lbl-form-left" for="latitude">Latitude:</label>
+                  <input type="text" id="latitude" name="latitude">
+                </div>  
+                <div class="ctn-input">
+                  <label class="lbl-form-left" for="longitude">Longitude:</label>
+                  <input type="text" id="longitude" name="longitude">
+                </div>  
+              </div>  
+            </div>        
+            <div id="ctn-btn-map">
+              <button id="btn-map" type="button">Visualizar Mapa</button>
+            </div>     
+          </form>
+          <div id="ctn-map"> 
+            <iframe id="frameMap" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14713.595064253397!2d0.000!3d0.000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1657141703121!5m2!1spt-BR!2sbr" width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            
+          </div>
+        </div>
+
+      </section>    
+    </main>
+
+    <script type="module" src="index.js" defer></script>
+  </body>
+
+</html>

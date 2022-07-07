@@ -1,0 +1,196 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  font-family: Roboto, Arial, Helvetica;
+}
+body:after{
+  content : "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(./assets/img/fundo-cerejeira.webp); 
+  background-size: cover;
+  background-repeat: none;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  opacity : 0.5;
+  z-index: -1;
+}
+#menu {
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+  height: 47px;
+  min-width: 700px;
+  align-items: center;
+  font-size: 14px;
+}
+.a-menu {
+  text-decoration: none;
+  padding: 14px;
+  color: white;
+  font-weight: bold;
+  transition: background .3s;
+}
+.a-menu:hover {
+  background-color: #787878;
+}
+#exercise1{
+  display: flex;
+  flex-direction: column;  
+  align-items: center;
+}
+.exercise{
+  width: 90vw;
+  display: flex;
+  flex-direction: column;  
+  align-items: center;
+}
+#frm-cep{
+  padding-bottom: 2vh;
+  display: flex;
+  width: 80vw;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff90;
+  border: 2px solid #ffa500;
+  border-radius: 5px;
+  gap: 2vh;
+} 
+#frm-inputs{
+  padding-bottom: 2vh;
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff90;
+  border: 2px solid #ffa500;
+  border-radius: 5px;
+  gap: 2vh;
+} 
+#ctn-address-info{
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#ctn-address, #ctn-district, #ctn-city, #ctn-coordinates{
+  width: 76vw;
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+}
+.input-container{
+  width: 76vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1vh;
+  gap: 1vw;
+}
+.ctn-input-center{
+  width: 15vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2vh;
+  gap: 1vw;
+}
+.lbl-form-left{
+  font-size: 1.2vw;
+}
+.ctn-input{
+  width: 28vw;
+  display: flex;
+  padding-top: 1vh;
+  gap: 1vw;
+  font-size: 1.4vw;;
+}
+.ctn-input-left{
+  width: 48vw;
+  display: flex;
+  gap: 1vw;
+  font-size: 1.4vw;;
+}
+.lbl-form-left{
+  width: 10vw;
+  font-size: 1.2vw;
+  text-align: right;
+}
+#address, #complement, #city {
+  width: 35vw;
+}
+#latitude, #longitude{
+  width: 15vw;
+}
+#state{
+  width: 10vw;
+}
+#district{
+  width: 15vw;
+}
+#num{
+  width: 8vw;
+}
+#cep{
+  width: 10vw;
+  font-size: 1.4vw;
+}
+
+#ctn-cep{
+  width: 12vw;
+  display: flex;
+  align-items: center;
+  padding-top: 1vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2vh;
+}
+#btn-cep{
+  width: 12vw;
+  height: 30px;
+  color: #fff;
+  background-color: #787878;
+  border-radius: 5px;
+}
+/* #btn-cep:hover{
+  background-color: #78787870;
+  color: #000;
+} */
+
+#msg{
+  font-size: 14px;
+  text-align: center;
+  width: 20vw;
+}
+
+#ctn-map{
+  background-color: #ffffff90;
+  border: 2px solid #ffa500;
+  border-radius: 5px;
+  display: none;
+  padding: 5px;
+  align-items: center;
+  justify-content: center;
+  width: 515px;
+  height: 418px;
+}
+
+#btn-map{
+  width: 18vw;
+  height: 30px;
+  color: #fff;
+  background-color: #787878;
+  border-radius: 5px;
+  display: none;
+}
